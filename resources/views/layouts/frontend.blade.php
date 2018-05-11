@@ -30,10 +30,10 @@
         <!-- Theme CSS -->
         <link rel="stylesheet" href="{{ asset('/templates/adminlte/css/AdminLTE.min.css') }}">
         <!-- AdminLTE Skin. -->
-        <link rel="stylesheet" href="{{ asset('/templates/adminlte/css/skins/skin-blue.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('/templates/adminlte/css/skins/' . config('app.theme') . '.min.css') }}">
 
         <!-- Custom CSS -->
-        <link href="{{ asset('/css/frontend.css?version=' . config('adminlte.version')) }}" rel="stylesheet">
+        <link href="{{ asset('/css/frontend.css?version=' . config('app.version')) }}" rel="stylesheet">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,7 +49,7 @@
     </head>
 
     <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
-    <body class="hold-transition {{ config('adminlte.theme') }} layout-top-nav">
+    <body class="hold-transition {{ config('app.theme') }} layout-top-nav">
         <!-- Site wrapper -->
         <div class="wrapper">
 
@@ -84,9 +84,9 @@
             @auth
                 <footer class="main-footer">
                     <div class="pull-right hidden-xs">
-                        <b>Version</b> {{ config('adminlte.version') }}
+                        <b>Version</b> {{ config('app.version') }}
                     </div>
-                    <strong>Copyright &copy; {{ date('Y') }}. {!! config('adminlte.credits') !!}</strong>. All rights reserved.
+                    <strong>Copyright &copy; {{ date('Y') }}. {!! config('app.credits') !!}</strong>. All rights reserved.
                 </footer>
             @endauth
         </div>
@@ -115,7 +115,7 @@
         <!-- AdminLTE App -->
         <script src="{{ asset('/templates/adminlte/js/adminlte.min.js') }}"></script>
         <!-- Custom Js -->
-        <script src="{{ asset('/js/frontend.js?version=' . config('adminlte.version')) }}"></script>
+        <script src="{{ asset('/js/frontend.js?version=' . config('app.version')) }}"></script>
 
         <script type="text/javascript">
             (function ($) {

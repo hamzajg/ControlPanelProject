@@ -3,9 +3,9 @@
     <!-- Logo -->
     <a href="{{ route('dashboard::index') }}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini">{!! config('adminlte.logo_mini') !!}</span>
+        <span class="logo-mini">{!! config('app.logo_mini') !!}</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg">{!! config('adminlte.logo_lg') !!}</span>
+        <span class="logo-lg">{!! config('app.logo_lg') !!}</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -22,19 +22,19 @@
                 <!-- User Account: style can be found in dropdown.less -->
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="{{ Auth::user()->getLogoPath() }}" class="user-image"
-                             alt="{{ Auth::user()->name }}">
-                        <span class="hidden-xs">{{ Auth::user()->name }}</span>
+                        <img src="" class="user-image"
+                             alt="">
+                        <span class="hidden-xs"></span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header">
-                            <img src="{{ Auth::user()->getLogoPath() }}" class="img-circle"
-                                 alt="{{ Auth::user()->name }}">
+                            <img src="" class="img-circle"
+                                 alt="">
 
                             <p>
-                                {{ Auth::user()->name }}
-                                <small>Member since {{ Carbon::parse(Auth::user()->created_at)->toFormattedDateString() }}</small>
+                               
+                                <small>Member since </small>
                             </p>
                         </li>
                         <!-- Menu Footer-->

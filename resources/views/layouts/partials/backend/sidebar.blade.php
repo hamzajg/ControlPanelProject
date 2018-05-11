@@ -6,11 +6,11 @@
         <div class="user-panel">
             <div class="pull-left image">
                 <a href="{{ route('dashboard::profile') }}">
-                    <img src="{{ Auth::user()->getLogoPath() }}" class="img-circle" alt="{{ Auth::user()->name }}">
+                    <img src="" class="img-circle" alt="">
                 </a>
             </div>
             <div class="pull-left info">
-                <p><a href="{{ route('dashboard::profile') }}">{{ Auth::user()->name }}</a></p>
+                <p><a href="{{ route('dashboard::profile') }}"></a></p>
                 <a href="{{ route('dashboard::profile') }}"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
         </div>

@@ -1,30 +1,28 @@
 {{-- Extends Layout --}}
 @extends('layouts.backend')
 
-{{-- Page Title --}}
-@section('page-title', 'Admin')
-
-{{-- Page Subtitle --}}
-@section('page-subtitle', 'Control panel')
-
 {{-- Breadcrumbs --}}
 @section('breadcrumbs')
-    {!! Breadcrumbs::render('admin') !!}
+    {!! Breadcrumbs::render('dashboard') !!}
 @endsection
+
+{{-- Page Title --}}
+@section('page-title', 'Dashboard')
+
+{{-- Page Subtitle --}}
+@section('page-subtitle', 'it all starts here')
 
 {{-- Header Extras to be Included --}}
 @section('head-extras')
-    @parent
+
 @endsection
 
 @section('content')
 
     <!-- Small boxes (Stat box) -->
     <div class="row">
-        <div class="col-lg-3 col-xs-6">
-            <!-- small box -->
-        </div>
-        <!-- ./col -->
+    </div>
+    <!-- /.row -->
 
 @endsection
 
