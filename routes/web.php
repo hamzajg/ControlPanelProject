@@ -15,13 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Auth::routes();
-Route::get('/backend', 'Admin\AdminController@index')->name('index');
-
 /**
  * Requires authentication.
  */
-// Route::group(['middleware' => 'auth'], function () {
+ Route::group(['middleware' => 'auth'], function () {
 
     /**
      * Dashboard. Common access.
@@ -64,7 +61,7 @@ Route::get('/backend', 'Admin\AdminController@index')->name('index');
         });
     });
 
-//});
+});
 
 // Route::group(['prefix'=>"backend","as"=>"admin.","middleware"=>['auth','admin']],function(){
 //       Route::get('/', 'Admin\AdminController@index')->name('index');

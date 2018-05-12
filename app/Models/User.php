@@ -2,19 +2,20 @@
 
 namespace App\Models;
 
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Model;
 
-class ProductCategory extends Model
+class User extends Model
 {
     //
-    use Notifiable;
 
+    use Notifiable;
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'product_category_name', 'product_category_desc',
+        'lirst_name', 'last_name', 'email', 'username', 'password', 'phone_number', 'location', 'user_type_id',
     ];
 }

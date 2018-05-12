@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ProductCategory extends Model
+class UserType extends Model
 {
     //
     use Notifiable;
@@ -15,6 +15,6 @@ class ProductCategory extends Model
      * @var array
      */
     protected $fillable = [
-        'product_category_name', 'product_category_desc',
+        'user_type_name', 'user_type_desc',
     ];
 }
